@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="ouroboros.ico" type="image/x-icon"/>
+    <title>ABOUT ME</title>
+    <link href='https://fonts.googleapis.com/css?family=Germania+One' rel='stylesheet'>
+    <style>
+            body {
+                background: chartreuse;
+                text-align: center;
+                font-family: 'Germania One';font-size: 60px;
+            }
+        
+            h1 {
+                font-weight: bold;
+            }
+
+            .row {
+                display: inline;
+            }
+            #blink{
+                opacity: 1;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="row">
+        <h1>TO DO 
+            <span id="blink">_</span>
+        </h1>
+    </div>
+    
+    <script>
+        setInterval(function(){
+            if (document.getElementById("blink").style.opacity == 1) {
+                document.getElementById("blink").style.opacity = 0
+            } else {
+                document.getElementById("blink").style.opacity = 1
+            }
+        }, 700);
+    </script>
+</body>
+</html>
